@@ -39,7 +39,13 @@ public class Search extends AppCompatActivity implements View.OnClickListener {
 
         dept_date.setOnClickListener(this);
         search.setOnClickListener(this);
-        search_all.setOnClickListener(this);
+        search_all.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Search.this , Booking_Confirm.class);
+                startActivity(i);
+            }
+        });
     }
 
     @Override
@@ -120,38 +126,38 @@ public class Search extends AppCompatActivity implements View.OnClickListener {
 
         }
 
-        if(v == search_all)
-        {
-
-            ConnectivityManager cm = (ConnectivityManager) getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
-            NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
-            if (null != activeNetwork) {
-                if(activeNetwork.getType() == ConnectivityManager.TYPE_WIFI)
-                {
-                    answer="You are connected to a WiFi Network";
-                    net  = true;
-                }
-
-                if(activeNetwork.getType() == ConnectivityManager.TYPE_MOBILE)
-                {
-                    net  = true;
-                    answer="You are connected to a Mobile Network";
-                }
-
-            }
-            else
-                answer = "No internet Connectivity";
-
-            if(net)
-            {
-                Toast.makeText(Search.this, "Hello", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(this, AllTrains.class);
-                startActivity(intent);
-            }
-            else
-                Toast.makeText(Search.this, answer, Toast.LENGTH_SHORT).show();
-
-
-        }
+//        if(v == search_all)
+//        {
+//
+//            ConnectivityManager cm = (ConnectivityManager) getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+//            NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+//            if (null != activeNetwork) {
+//                if(activeNetwork.getType() == ConnectivityManager.TYPE_WIFI)
+//                {
+//                    answer="You are connected to a WiFi Network";
+//                    net  = true;
+//                }
+//
+//                if(activeNetwork.getType() == ConnectivityManager.TYPE_MOBILE)
+//                {
+//                    net  = true;
+//                    answer="You are connected to a Mobile Network";
+//                }
+//
+//            }
+//            else
+//                answer = "No internet Connectivity";
+//
+//            if(net)
+//            {
+//                Toast.makeText(Search.this, "Hello", Toast.LENGTH_SHORT).show();
+//                Intent intent = new Intent(this, AllTrains.class);
+//                startActivity(intent);
+//            }
+//            else
+//                Toast.makeText(Search.this, answer, Toast.LENGTH_SHORT).show();
+//
+//
+//        }
     }
 }

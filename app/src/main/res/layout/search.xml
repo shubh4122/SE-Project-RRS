@@ -128,7 +128,7 @@
                     android:layout_margin="8dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/colorAccent"
-                    android:text="Search All Trains" />
+                    android:text="Booked tickets" />
 
 
             </LinearLayout>

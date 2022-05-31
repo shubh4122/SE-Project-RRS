@@ -48,6 +48,15 @@ public class Confirm extends AppCompatActivity implements View.OnClickListener {
         berth_type = extras.getString("Berth Type");
 
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor editor=sharedPreferences.edit();
+        editor.putString("name on ticket", name);
+        editor.putString("no. of ticket", no_of_tickets);
+        editor.putString("age", age);
+        editor.putString("mobile no", mob_number);
+        editor.putString("berth type", berth_type);
+        editor.putString("no. of ticket", no_of_tickets);
+        editor.apply();
+
         price = sharedPreferences.getString("price", null);
         str_avail= sharedPreferences.getString("Avail", null);
         train_name= sharedPreferences.getString("train", null);
@@ -78,7 +87,21 @@ public class Confirm extends AppCompatActivity implements View.OnClickListener {
         berth_value.setText(berth_type);
 
         confirm = findViewById(R.id.confirm);
-        confirm.setOnClickListener(this);
+        confirm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Confirm.this , Booking_Confirm.class);
+//                intent.putExtra("train name", train_name);
+//                intent.putExtra("class", class_type);
+//                intent.putExtra("no. of ticket", no_of_tickets);
+//                intent.putExtra("name on ticket",name);
+//                intent.putExtra("age", age);
+//                intent.putExtra("mobile no", mob_number);
+//                intent.putExtra("berth type", berth_type);
+//                intent.putExtra("total price", final_price);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
