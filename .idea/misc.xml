@@ -3,18 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/activity_confirm.xml" value="0.35625" />
-        <entry key="app/src/main/res/layout/activity_final.xml" value="0.35625" />
-        <entry key="app/src/main/res/layout/activity_ticket1.xml" value="0.35625" />
-        <entry key="app/src/main/res/layout/cardview.xml" value="0.35625" />
-        <entry key="app/src/main/res/layout/list_item.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/activity_booking_confirm.xml" value="0.19270833333333334" />
+        <entry key="app/src/main/res/layout/activity_confirm.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_final.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_ticket1.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/cardview.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/list_item.xml" value="0.25" />
         <entry key="app/src/main/res/layout/login.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/register.xml" value="0.35625" />
-        <entry key="app/src/main/res/layout/results.xml" value="0.35625" />
-        <entry key="app/src/main/res/layout/search.xml" value="0.35625" />
-        <entry key="app/src/main/res/layout/thankyou.xml" value="0.35625" />
-        <entry key="app/src/main/res/layout/ticket.xml" value="0.35625" />
-        <entry key="app/src/main/res/layout/x.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/results.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/search.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/thankyou.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/ticket.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/x.xml" value="0.22" />
       </map>
     </option>
   </component>
